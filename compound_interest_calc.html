@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>複利計算機</title>
+        <style>
+        body {
+            color:rgb(187, 187, 187);
+            background-color:rgb(52, 52, 52);
+        }
+        </style>
+    </head>
+    <body>
+        <table>
+            <table>
+                <tr>
+                    <td>起始本金</td>
+                    <td><input type="text" id="start"></td>
+                </tr>
+                <tr>
+                    <td>每年持續投入金額</td>
+                    <td><input type="text" id="yearInvestAmount"></td>
+                </tr>
+                <tr>
+                    <td>年利率(%)</td>
+                    <td><input type="text" id="interest"></td>
+                </tr>
+                <tr>
+                    <td>年期</td>
+                    <td><input type="text" id="years"></td>
+                </tr>
+              </table>
+        </table>
+        <p>計算結果：</p>
+        <p id="result"></p>
+
+        <div id="investPlot" style="height: 720px;max-width:1700px"></div>
+
+        <script src="https://cdn.plot.ly/plotly-2.16.1.min.js"></script>
+        <script src="calc_function.js"></script>
+    </body>
+</html>
