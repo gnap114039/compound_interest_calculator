@@ -8,6 +8,11 @@
             color:rgb(187, 187, 187);
             background-color:rgb(52, 52, 52);
         }
+        #formula {
+            position: absolute;
+            top: 10px;
+            left: 500px;
+        }
         </style>
     </head>
     <body>
@@ -34,7 +39,11 @@
         <p>計算結果：</p>
         <p id="result"></p>
 
-        <div id="investPlot" style="height: 720px;max-width:1700px"></div>
+        <div id="investPlot" style="height:720px;max-width:1700px"></div>
+        <div id="formula">
+            <p>第一年 = 〖 起始本金 + 每年持續投入金額 〗 * 年利率</p>
+            <p>續年 = 〖 上一年 + 每年持續投入金額 〗 * 年利率</p>
+        </div>
 
         <script src="https://cdn.plot.ly/plotly-2.16.1.min.js"></script>
         <script src="calc_function.js"></script>
